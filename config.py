@@ -4,33 +4,33 @@ import os
 from logging.handlers import RotatingFileHandler
 
 # Bot token dari @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6325594724:AAH-2SZRoxVdpbirNhXlyG5-uwlE7HU43CQ")
 
 # API ID Anda dari my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", ""))
+APP_ID = int(os.environ.get("APP_ID", "29486311"))
 
 # API Hash Anda dari my.telegram.org
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "ffdc688dc4eee8d2585cb24155188432")
 
 # ID Channel Database
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001950756152"))
 
 # OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", ""))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1707380693"))
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "BLVCKCARD")
+OWNER = os.environ.get("OWNER", "skandal")
 
 # Database
-DB_URI = os.environ.get("DATABASE_URL", "")
+DB_URI = os.environ.get("DATABASE_URL", "postgres://tlmyyost:P2inlcCa4QcIWDD0QvlleYEkGsjBAX2I@flora.db.elephantsql.com/tlmyyost")
 
 # Username CH & Group
 CHANNEL = os.environ.get("CHANNEL", "BokepTV21")
 GROUP = os.environ.get("GROUP", "NegativeRoom")
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "0"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002037994205"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1002018123667"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -40,7 +40,7 @@ START_MSG = os.environ.get(
     "📣<b> Viral Information Channel</b>\n  ├  🔞 @SitusLink\n  ├  🔞 @InfoColmek\n  ├  🔞 @NegativeRoom\n └  🔞 @VCSTELEGRAM\n\n⁉️  ✘   〘☏〙Contact Admin :〘☏〙\n<a href='https://t.me/BLVCKCARD'></a>  ├  ✘     ║▌│█║▌│ █║▌│█│║▌║\n  └  ✘                  SCANNING",
 )
 try:
-    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "").split())]
+    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "1707380693").split())]
 except ValueError:
     raise Exception("Daftar Admin Anda tidak berisi User ID Telegram yang valid.")
 
